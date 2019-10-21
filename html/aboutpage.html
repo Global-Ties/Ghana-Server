@@ -7,6 +7,10 @@
 <link rel="stylesheet" type="text/css" href="css/style2.css" />
 <link rel="stylesheet" type="text/css" href="css/stylefont.css" />
 <link rel="stylesheet" type="text/css" href="css/schoolhouse.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/slick.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/announcements.css" rel="stylesheet">
 <style>
   body,
   h1,
@@ -28,91 +32,26 @@
   .fa-coffee {
     font-size: 200px
   }
+
+  .w3-top *{
+    color: white !important;
+  }
+  .w3-top *:hover{
+    text-decoration: none;
+  }
 </style>
 
 <body>
-
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-orange w3-card w3-left-align w3-large">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue"
-        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="/html/aboutpage.html"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-red w3-red">Home</a>
-      <a href="/html/gradepage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal">Student
-        Portal</a>
-      <a href="/html/teacheraddlink.html"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-green">Teacher Portal</a>
-      <a href="/html/games.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Games</a>
-      <a href="/html/faq.html"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-indigo">Instructions</a>
-      <a href="https://132.239.135.137/mail"
-        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-deep-purple">Email</div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="aboutpage.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-      <a href="gradepage.html" class="w3-bar-item w3-button w3-padding-large">Student Portal</a>
-      <a href="teacheraddlink.html" class="w3-bar-item w3-button w3-padding-large">Teacher Portal</a>
-      <a href="contactpage.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header class="w3-container w3-white w3-center"
-    style="padding:60px 10px; background: linear-gradient(rgb(66, 37, 37), rgb(216, 187, 157), rgb(233, 224, 216), white, white, white, white)">
-    <div style="width: 100%; display: table;">
-      <p> </p>
-      <div style="display: table-row">
-        <div style="width: 100px; display: table-cell;">
-        </div>
-        <div style="width: 400px; display: table-cell; padding-top: 15px">
-          <img src="css/images/Semanhyiya.png" style="padding-top:5px" width="300" height="300" alt="School Logo">
-        </div>
-        <div style="display: table-cell;">
-          <h1 class="w3-margin w3-jumbo w3-left-align">Semanhyiya American School</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Divider -->
-  <div style="padding:10px" class="w3-row-padding w3-container w3-orange">
-    <div class="w3-content">
-      <div class="w3-twothird">
-      </div>
-    </div>
-  </div>
-
-  <!-- Divider -->
-  <div style="padding:5px" class="w3-row-padding w3-container "">
-    <div class=" w3-content">
-    <div class="w3-twothird">
-    </div>
-  </div>
-  </div>
-
-  <!-- Divider -->
-  <div style="padding:10px" class="w3-row-padding w3-container w3-orange">
-    <div class="w3-content">
-      <div class="w3-twothird">
-      </div>
-    </div>
-  </div>
+<section id="navHeader">
+</section>
 
   <!-- First Grid -->
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/slick.min.css" rel="stylesheet">
-      <link href="css/font-awesome.min.css" rel="stylesheet">
-      <link href="css/announcements.css" rel="stylesheet">
-
-
-      <section class="two-column-list mb-sm-5 pr-lg-3 container-fluid" id="two-column-list">
+      <section class=" mb-sm-5 pr-lg-3 container-fluid" id="">
         <div style="background: #ededed" class="container">
           <div class="row">
-            <div class="col-lg-6 pr-0">
+            <div class="annCol">
               <section aria-label="Announcements" class="announcements">
                 <h2 class="font-weight-bold border-bottom pb-3 mt-3 mb-0 pr-5">Announcements</h2>
 
@@ -133,7 +72,6 @@
                       <li class="border-bottom pb-3 mt-3">
 
                         <span class="meta text-uppercase">January 30th, 2018</span>
-
 
                         <h3 class="font-weight-bold mt-0">
                           <a
@@ -157,16 +95,8 @@
                           standard for other city websites throughout the United States.</p>
                       </li>
                     </ul>
-                    <a class="all pos-stat text-uppercase ml-lg-5" href="https://www.solodev.com/news/">All
-                      announcements
-                      &#62;
-                    </a>
-                    <div class="left-right-arrows pr-lg-5">
-                      <button class="prev-arrow-announcement" type="button">&#60;</button>
-                      <button class="next-arrow-announcement" type="button">&#62;</button>
-                    </div>
-                  </div>
 
+                  </div>
                   <div>
                     <ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">
                       <li class="border-bottom pb-3 mt-3">
@@ -206,15 +136,17 @@
                           content management software companies based largely on user ratings</p>
                       </li>
                     </ul>
-                    <a class="all pos-stat text-uppercase" href="/announcements/">All announcements &#62;
-                    </a>
-                    <div class="left-right-arrows pr-lg-5">
+                  </div>
+                </div><a class="all pos-stat text-uppercase ml-lg-5" href="https://www.solodev.com/news/">All
+                announcements
+                &#62;
+              </a>
+                    <div style="position: inherit; float: right;" class="left-right-arrows pr-lg-5">
                       <button class="prev-arrow-announcement" type="button">&#60;</button>
                       <button class="next-arrow-announcement" type="button">&#62;</button>
                     </div>
-                  </div>
-                </div>
               </section>
+              
             </div>
           </div>
         </div>
@@ -231,20 +163,15 @@
       </div>
       
 
-      <!-- Footer -->
-      <footer style="padding:1px 1px; background: rgb(31, 31, 37)" class="w3-container w3-center">
-        <div class="w3-large">
-          <p style="color: white">Copyright © 2017, The GodFreds Foundation</p>
-        </div>
-      </footer>
+
 
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/tether.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/slick.min.js"></script>
       <script src="js/announcements.js"></script>
+      <script src="js/schoolhouse.js"></script>
       <script>
-
         // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
           var x = document.getElementById("navDemo");

@@ -4,9 +4,12 @@
     font-weight: 600;
     color: #0093e0!important;
 }
-
+.annCol{
+  width: 90%;
+}
 .announcements{
   color: black;
+  padding: 2em;
 }
 
 @media (max-width: 991px) {
