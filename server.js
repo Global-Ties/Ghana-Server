@@ -2,6 +2,9 @@ const app = require('express')();
 const http = require('http').Server(app);
 const fs = require('fs');
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); //need to parse HTTP request body
+
 app.set('view engine', 'pug')
 
 http.listen(3000, function(){
@@ -11,6 +14,13 @@ http.listen(3000, function(){
 /** Serving pages */
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/html/aboutpage.html');
+
+});
+
+const announcementData = require('./JSON/announcements.json')
+app.get('/announcements', function(req, res){
+  console.log(announcementData);
+  res.send(announcementData);
 });
 
 app.get('/html/*', function(req, res) {

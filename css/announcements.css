@@ -123,3 +123,10 @@ a {
   color: #0093e0!important;
     transition: all,.4s,ease;
 }
+
+
+
+#announcementContainer{
+  height: 30rem;
+  overflow: scroll;
+}

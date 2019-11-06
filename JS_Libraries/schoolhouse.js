@@ -27,14 +27,14 @@ $(document).ready(function () {
     '</div>\n';
   if (pgTitle === "Home") {
     headerHTML += '<!-- Header -->\n' +
-      '<header class="w3-container w3-white w3-center" style="padding:60px 10px; background: linear-gradient(rgb(66, 37, 37), rgb(216, 187, 157), rgb(233, 224, 216), white, white, white, white)">\n' +
+      '<header class="w3-container w3-white w3-center" >\n' +
       '<div style="width: 100%; display: table;">\n' +
       '<p> </p>\n' +
       '<div style="display: table-row">\n' +
       '<div style="width: 100px; display: table-cell;">\n' +
       '</div>\n' +
       '<div style="width: 400px; display: table-cell; padding-top: 15px">\n' +
-      '<img src="../css/images/Semanhyiya.png" style="padding-top:5px" width="300" height="300" alt="School Logo">\n' +
+      '<img src="../css/images/Semanhyiya.png" style="padding-top:5px" width="150" height="150" alt="School Logo">\n' +
       '</div>\n' +
       '<div style="display: table-cell;">\n' +
       '<h1 class="w3-margin w3-jumbo w3-left-align">Semanhyiya American School</h1>\n' +
