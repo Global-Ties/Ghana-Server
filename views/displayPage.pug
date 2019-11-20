@@ -3,6 +3,9 @@ html
   head
     style
       include displayPage.css
+      include ../css/bootstrap.min.css
+      include ../css/schoolhouse.css
+      include ../css/announcements.css
     title="SAS Student Portal"
     h2= title
   header(id='navHeader')
@@ -22,8 +25,22 @@ html
         h5 Due Date:
         each elem in links
           a(href='/SITES/'+elem.link+'/index.html' class="link")= elem.dueDate
+
+    section(class='mb-sm-5 pr-lg-3 container-fluid' id="")
+        h2(class="font-weight-bold border-bottom pb-3 mt-3 mb-0 pr-5") Announcements
+        div(id="announcementContainer" style="background: #ededed" class="container")
+          div(class="row")
+            div(class="annCol")
+              section(aria-label="Announcements" class="announcements")
+                div(id="outerDiv" class="announcement-slider border-r-xs-0 border-r position-relative")
+                  div(id="starterDiv")
+                a(class="all pos-stat text-uppercase ml-lg-5" ) All announcements
+
+
     script
       include ../JS_Libraries/jquery-3.2.1.min.js
       include ../JS_Libraries/tether.min.js
       include ../JS_Libraries/bootstrap.min.js
       include ../JS_Libraries/schoolhouse.js
+      include ../JS_Libraries/slick.min.js
+      include ../JS_Libraries/announcements.js

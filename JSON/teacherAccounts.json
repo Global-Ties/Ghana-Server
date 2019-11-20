@@ -1,0 +1,6 @@
+{
+    "nforesti": {
+        "password": "password",
+        "access" : ["grade=Grade_1&&subject=math", "grade=Grade_1&&subject=science"]
+    }
+}

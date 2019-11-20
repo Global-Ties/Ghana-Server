@@ -1,0 +1,26 @@
+{
+    "First": {
+        "subjects": {
+            "math": {
+                "announcement1": {
+                    "title": "math1",
+                    "announcement": "blablabla"
+                },
+                "announcement2": {
+                    "title": "math2",
+                    "announcement": "blablabla"
+                }
+            },
+            "science": {
+                "announcement3": {
+                    "title": "science1",
+                    "announcement": "blablabla"
+                },
+                "announcement4": {
+                    "title": "science2",
+                    "announcement": "blablabla"
+                }
+            }
+        }
+    }
+}

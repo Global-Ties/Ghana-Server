@@ -33,7 +33,7 @@ $(document).ready(function () {
       '<div style="display: table-row">\n' +
       '<div style="width: 100px; display: table-cell;">\n' +
       '</div>\n' +
-      '<div style="width: 400px; display: table-cell; padding-top: 15px">\n' +
+      '<div style="width: 400px; display: table-cell; padding-top: 60px">\n' +
       '<img src="../css/images/Semanhyiya.png" style="padding-top:5px" width="150" height="150" alt="School Logo">\n' +
       '</div>\n' +
       '<div style="display: table-cell;">\n' +
@@ -51,8 +51,8 @@ $(document).ready(function () {
       '<h1 class="w3-margin w3-jumbo">' + pgTitle + '</h1>' +
       '</header>';
   }
-  headerHTML += '<!-- Divider -->\n' +
-    '<div style="padding:10px" class="w3-row-padding w3-container w3-orange">\n' +
+ /* headerHTML += '<!-- Divider -->\n' +
+   '<div style="padding:10px" class="w3-row-padding w3-container w3-orange">\n' +
     '<div class="w3-content">\n' +
     '<div class="w3-twothird">\n' +
     '</div>\n' +
@@ -71,7 +71,7 @@ $(document).ready(function () {
     '<div class="w3-twothird">\n' +
     '</div>\n' +
     '</div>\n' +
-    '</div>\n';
+    '</div>\n';*/
   navHeader.innerHTML = headerHTML;
 
 
