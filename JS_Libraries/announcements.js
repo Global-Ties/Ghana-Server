@@ -37,7 +37,7 @@ $(document).ready(function () {
 });
 
 const insertAnnouncements = function (announcements, isHome) {
-  let announcementHTML = '';
+  let announcementCounter = 0;
   let liHTML = '';
   $('#starterDiv').html("");
   announcements.forEach(function (announcement, i) {
@@ -46,13 +46,13 @@ const insertAnnouncements = function (announcements, isHome) {
     console.log(i);*/
     liHTML += newLI(announcement);
 
-    $('#outerDiv').html($('#outerDiv').html() + newUL(liHTML));
+    $('#outerDiv').html($('#outerDiv').html() + newUL(liHTML, announcementCounter))
+    announcementCounter++;
     liHTML = "";
   });
 }
 
-const insertAnnouncements2 = function (announcements, num, isHome) {
-  let announcementHTML = '';
+const insertAnnouncements2 = function (announcements, num, announcementCounter, isHome) {
   let liHTML = '';
   let starterDiv = document.getElementsByClassName("starterDiv")[num];
   $(starterDiv).html("");
@@ -62,15 +62,24 @@ const insertAnnouncements2 = function (announcements, num, isHome) {
     console.log(announcement);
     console.log(i);*/
     liHTML += newLI(announcement);
-    $(outerDiv).html($(outerDiv).html() + newUL(liHTML));
+    $(outerDiv).html($(outerDiv).html() + newUL(liHTML, announcementCounter));
+    announcementCounter++;
     liHTML = "";
   });
+  return announcementCounter;
 }
 
 
-const newUL = function (liHTML) {
-  let innerDiv = '<div><ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">' + liHTML +
-    '</ul></div>'
+const newUL = function (liHTML, counter) {
+  let innerDiv = '';
+  if ($(location).attr("href") == "http://localhost:3000/html/teacheraddlink.html"){
+    innerDiv = '<div class="divAnnouncement" id="announcement'+counter+'"><ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">' + liHTML +
+    '</ul><button class="delButton" onclick="delClassAnnouncements(this)" id="button'+counter+'">-</button></div>';
+  }
+  else{
+    innerDiv = '<div class="divAnnouncement" id="announcement'+counter+'"><ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">' + liHTML +
+    '</ul></div>';
+  }
   return innerDiv;
 };
 
@@ -87,7 +96,7 @@ const newLI = function (announcement) {
 
 /*loads announcements for all classes in the teacher portal*/
 const loadClassAnnouncements = function () {
-  console.log("in load class");
+  let announcementCounter = 0;
   let courses = document.getElementsByClassName("announcementClass");
   console.log(courses);
   $(courses).each(function (i) {
@@ -96,10 +105,14 @@ const loadClassAnnouncements = function () {
       dataType: "json",
       headers: { 'X-Alt-Referer': document.referrer },
       success: function (announcements) {
-        console.log("in success");
-        console.log(announcements);
-        insertAnnouncements2(announcements, i, false);
+        announcementCounter = insertAnnouncements2(announcements, i, announcementCounter, false);
       }
-    });
+    });/*
+    announcementCounter++;*/
   });
 };
+
+const delClassAnnouncements = function (buttonObj) {
+  console.log($(buttonObj).attr('id'));
+  $(document).remove($(buttonObj).attr('id'));
+}

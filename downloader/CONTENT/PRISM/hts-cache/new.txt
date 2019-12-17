@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+17:49:35	503893/503893	---M-Z	200	added ('OK')	text/html	date:Thu,%2028%20Nov%202019%2017:17:01%20GMT	https://en.wikipedia.org/wiki/PRISM_(surveillance_program)	./CONTENT/PRISM/en.wikipedia.org/wiki/PRISM_(surveillance_program).html	(from )
+17:49:36	5101/5101	---M-Z	200	added ('OK')	text/plain	date:Mon,%2030%20Sep%202019%2021:40:32%20GMT	https://en.wikipedia.org/robots.txt		(from )

@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+en.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	04-Dec-2019
+.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access-Global	04-Dec-2019
+.wikipedia.org	TRUE	/	FALSE	1999999999	GeoIP	US:CA:San_Diego:32.86:-117.21:v4
+

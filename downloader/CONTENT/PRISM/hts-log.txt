@@ -1,0 +1,11 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 03 Dec 2019 17:49:34 at https://en.wikipedia.org/wiki/PRISM_(surveillance_program) +*
+(httrack https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29 -O ./CONTENT/PRISM -r1 +* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 seconds : 2 links scanned, 1 files written (503893 bytes overall) [115233 bytes received at 38411 bytes/sec], 508994 bytes transferred using HTTP compression in 2 files, ratio 22%
+(No errors, 0 warnings, 0 messages)
