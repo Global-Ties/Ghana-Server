@@ -113,6 +113,13 @@ const loadClassAnnouncements = function () {
 };
 
 const delClassAnnouncements = function (buttonObj) {
-  console.log($(buttonObj).attr('id'));
-  $(document).remove($(buttonObj).attr('id'));
+  console.log($($(buttonObj).attr('id')));
+  $.ajax({
+    url: "/delclassAnnouncements/" + courses[i].innerHTML,
+    dataType: "json",
+    headers: { 'X-Alt-Referer': document.referrer },
+    success: function (announcements) {
+      buttonObj.parentNode.parentNode.removeChild(buttonObj.parentNode);
+    }
+  });
 }
