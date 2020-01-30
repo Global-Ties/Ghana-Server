@@ -12,6 +12,8 @@ const httrackWrap = (data, updateAvailable) => {
         updateAvailable();
         
 
+        // Updates JSON file with download data (date, description, link, etc)
+        // Mongo database calls would go here
         fs.readFile("JSON/files.json", (err, files) => {
             if ( err ) {
             console.err("ERROR ACCESSING FILES (JSON/files.json):", err);
